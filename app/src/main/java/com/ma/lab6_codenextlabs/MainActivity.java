@@ -31,28 +31,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DiceActivity.class);
         startActivity(intent);
     }
-    public void tbd(View view){
-
-        final EditText taskEditText = new EditText(getApplicationContext());
+    public void alertDialogDemo(View view){
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Please enter your guess:")
-                .setTitle("Guess the Random Number")
-                .setView(taskEditText)
-                .setIcon(android.R.drawable.ic_bulb)
+        alertDialogBuilder.setMessage("You just hit an AlertDialog")
+                .setTitle("Oops, Something is Wrong!")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Context context = getApplicationContext();
-                CharSequence text = "Glad you are excited too!"
-                        + " And you entered:" + taskEditText.getText().toString();
+                CharSequence text = "Glad you reach this far! Peace.";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
             }
         });
-
         alertDialogBuilder.create().show();
     }
 }
