@@ -50,6 +50,7 @@
                 android:layout_margin="24dp"
                 android:layout_weight="1"
                 android:background="#CDDC39"
+                android:onClick="randomNumber"
                 android:text="Random Number"
                 android:textSize="18sp" />
 
@@ -68,6 +69,7 @@
                 android:layout_margin="24dp"
                 android:layout_weight="1"
                 android:background="#4CAF50"
+                android:onClick="dice"
                 android:text="Dice"
                 android:textSize="18sp" />
 
