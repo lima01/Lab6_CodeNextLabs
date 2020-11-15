@@ -74,16 +74,34 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/btnTBD"
+                android:id="@+id/btnAlertDialog"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="24dp"
                 android:layout_weight="1"
                 android:background="#9C27B0"
-                android:onClick="tbd"
-                android:text="TBD"
+                android:onClick="alertDialogDemo"
+                android:text="Alert Dialog"
                 android:textSize="18sp" />
+
+
         </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+             <Button
+                 android:id="@+id/btnGuessNumber"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="24dp"
+                 android:layout_weight="1"
+                 android:background="#009688"
+                 android:onClick="guessNumber"
+                 android:text="Guess Number" />
+         </LinearLayout>
 
     </LinearLayout>
 
